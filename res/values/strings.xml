@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">appDosimetriaPena</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="title_activity_tipo_crime">TipoCrimeActivity</string>
+    <string name="title_activity_tipo_cliente">TipoClienteActivity</string>
+    <string name="title_activity_cadastro_cliente">CadastroClienteActivity</string>
+    <string name="title_activity_seleciona_cliente">SelecionaClienteActivity</string>
+    <string name="title_activity_regras">RegrasActivity</string>
+    <string name="title_activity_visualiza_ficha">VisualizaFichaActivity</string>
+
+</resources>
