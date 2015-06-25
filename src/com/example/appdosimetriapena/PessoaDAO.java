@@ -37,6 +37,7 @@ public class PessoaDAO {
 		values.put("nome", c.getNome());
 		values.put("idade", c.getIdade());
 		values.put("sexo", c.getSexo());
+//		values.put("horarioregistro", c.getHorarioRegistro());
 
 		long generatedId = mDatabase.insert(DBHelper.TABLE_PESSOA, null,
 				values);
@@ -67,7 +68,7 @@ public class PessoaDAO {
 		c.setNome(cursor.getString(1));
 		c.setIdade(cursor.getInt(2));
 		c.setSexo(cursor.getInt(3));
-		c.setHorarioRegistro(cursor.getString(4));		
+//		c.setHorarioRegistro(cursor.getString(4));		
 
 		return c;
 	}
@@ -79,7 +80,7 @@ public class PessoaDAO {
 		i.setNome(cursor.getString(1));
 		i.setIdade(cursor.getInt(2));
 		i.setSexo(cursor.getInt(3));
-		i.setHorarioRegistro(cursor.getString(4));
+//		i.setHorarioRegistro(cursor.getString(4));
 
 		return i;
 	}

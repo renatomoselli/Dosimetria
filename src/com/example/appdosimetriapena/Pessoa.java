@@ -5,14 +5,9 @@ import java.io.Serializable;
 public class Pessoa implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private long id;
-	private String nome, horarioRegistro;
+	private String nome;//, horarioRegistro;
 	private int sexo, idade;
 	
-//	public Cliente(String nome, Boolean sexo, int idade){
-//		this.nome = nome;
-//		this.sexo = sexo;
-//		this.idade = idade;
-//	}
 	public long getId() {
 		return id;
 	}
@@ -25,12 +20,12 @@ public class Pessoa implements Serializable{
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getHorarioRegistro() {
-		return horarioRegistro;
-	}
-	public void setHorarioRegistro(String horarioRegistro) {
-		this.horarioRegistro = horarioRegistro;
-	}
+//	public String getHorarioRegistro() {
+//		return horarioRegistro;
+//	}
+//	public void setHorarioRegistro(String horarioRegistro) {
+//		this.horarioRegistro = horarioRegistro;
+//	}
 	public int getSexo(){
 		return sexo;
 	}
