@@ -35,7 +35,6 @@ public class CadastroClienteActivity extends Activity {
 		radioF = (RadioButton)findViewById(R.id.rdFeminino);
 		pessoa = new Pessoa();
 		pessoaDAO = new PessoaDAO(this);
-		pessoa = pessoaDAO.getById(id);
 		
 		btnSalvar = (Button) findViewById(R.id.btnSalvar);
 		btnSalvar.setOnClickListener(btnSalvarListener);
@@ -61,7 +60,7 @@ public class CadastroClienteActivity extends Activity {
 			pessoa.setSexo(sexo);
 //			pessoa.setHorarioRegistro();
 
-			pessoaDAO.update(pessoa);
+			pessoaDAO.save(pessoa);
 			
 			CadastroClienteActivity.this.finish();
 		}
