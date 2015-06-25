@@ -6,7 +6,8 @@ public class Pessoa implements Serializable{
 	private static final long serialVersionUID = 1L;
 	private long id;
 	private String nome;//, horarioRegistro;
-	private int sexo, idade;
+	private int sexo, idade, pena;
+	
 	
 	public long getId() {
 		return id;
@@ -20,12 +21,12 @@ public class Pessoa implements Serializable{
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-//	public String getHorarioRegistro() {
-//		return horarioRegistro;
-//	}
-//	public void setHorarioRegistro(String horarioRegistro) {
-//		this.horarioRegistro = horarioRegistro;
-//	}
+	public int getPena() {
+		return pena;
+	}
+	public void setPena(int pena) {
+		this.pena = pena;
+	}
 	public int getSexo(){
 		return sexo;
 	}

@@ -58,7 +58,7 @@ public class DescricaoCliente extends Activity {
 		}else{
 			genero.setText("Genero = Feminino");
 		}
-		pena.setText("Pena = Pena de aproximadamente de  /*+ pessoa.getHorarioRegistro() +*/  meses");
+		pena.setText("Pena = Pena de aproximadamente de" + pessoa.getPena() + " meses");
 	}
 	
 	private void limpar(){

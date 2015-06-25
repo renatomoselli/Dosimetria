@@ -19,8 +19,8 @@ public class DBHelper extends SQLiteOpenHelper {
 				"_id INTEGER PRIMARY KEY AUTOINCREMENT, " +
 				"nome TEXT NOT NULL," +
 				"idade INTEGER NOT NULL," +
-				"sexo INTEGER NOT NULL);";
-//				"horarioregistro TEXT);";
+				"sexo INTEGER NOT NULL," +
+				"pena INTEGER);";
 		db.execSQL(sql);		
 	}
 

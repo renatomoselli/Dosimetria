@@ -27,7 +27,7 @@ public class TipoClienteActivity extends Activity {
 		
 		@Override
 		public void onClick(View v) {
-			Intent i = new Intent(TipoClienteActivity.this, SelecionaClienteActivity.class);
+			Intent i = new Intent(TipoClienteActivity.this, SelecionaClienteActivity2.class);
 			startActivity(i);
 		}
 	};

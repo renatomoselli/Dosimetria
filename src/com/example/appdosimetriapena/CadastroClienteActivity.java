@@ -58,6 +58,7 @@ public class CadastroClienteActivity extends Activity {
 			pessoa.setNome(nome);
 			pessoa.setIdade(idade);
 			pessoa.setSexo(sexo);
+			pessoa.setPena(0);
 //			pessoa.setHorarioRegistro();
 
 			pessoaDAO.save(pessoa);

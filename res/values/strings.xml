@@ -12,5 +12,7 @@
     <string name="title_activity_atenuantes">AtenuantesActivity</string>
     <string name="title_activity_descricao_cliente">DescricaoCliente</string>
     <string name="btn_OK">OK</string>
+    <string name="title_activity_seleciona_cliente_activity2">SelecionaClienteActivity2</string>
+    <string name="btn_Calcular">CALCULAR</string>
 
 </resources>
