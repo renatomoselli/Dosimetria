@@ -1642,12 +1642,13 @@ containing a value of this type.
         public static final int activity_chooser_view_content=0x7f090021;
         public static final int always=0x7f090014;
         public static final int beginning=0x7f09001b;
-        public static final int btnBuscar=0x7f09004e;
-        public static final int btnClienteExiste=0x7f09004f;
-        public static final int btnConsultaCliente=0x7f09004c;
-        public static final int btnConsultaPena=0x7f09004b;
-        public static final int btnNovoCliente=0x7f090050;
+        public static final int btnBuscar=0x7f09004f;
+        public static final int btnClienteExiste=0x7f090050;
+        public static final int btnConsultaCliente=0x7f09004d;
+        public static final int btnConsultaPena=0x7f09004c;
+        public static final int btnNovoCliente=0x7f090051;
         public static final int btnSalvar=0x7f09004a;
+        public static final int btn_OK=0x7f09004b;
         public static final int checkbox=0x7f090029;
         public static final int collapseActionView=0x7f090015;
         public static final int decor_content_parent=0x7f09002f;
@@ -1669,7 +1670,7 @@ containing a value of this type.
         public static final int linearLayout1=0x7f090040;
         public static final int linearLayout2=0x7f090043;
         public static final int listMode=0x7f09000a;
-        public static final int listView1=0x7f09004d;
+        public static final int listView1=0x7f09004e;
         public static final int list_item=0x7f090025;
         public static final int middle=0x7f09001d;
         public static final int never=0x7f090017;
@@ -1758,13 +1759,14 @@ containing a value of this type.
         public static final int abc_search_view=0x7f030015;
         public static final int abc_simple_dropdown_hint=0x7f030016;
         public static final int activity_cadastro_cliente=0x7f030017;
-        public static final int activity_main=0x7f030018;
-        public static final int activity_regras=0x7f030019;
-        public static final int activity_seleciona_cliente=0x7f03001a;
-        public static final int activity_tipo_cliente=0x7f03001b;
-        public static final int activity_tipo_crime=0x7f03001c;
-        public static final int activity_visualiza_ficha=0x7f03001d;
-        public static final int support_simple_spinner_dropdown_item=0x7f03001e;
+        public static final int activity_descricao_cliente=0x7f030018;
+        public static final int activity_main=0x7f030019;
+        public static final int activity_regras=0x7f03001a;
+        public static final int activity_seleciona_cliente=0x7f03001b;
+        public static final int activity_tipo_cliente=0x7f03001c;
+        public static final int activity_tipo_crime=0x7f03001d;
+        public static final int activity_visualiza_ficha=0x7f03001e;
+        public static final int support_simple_spinner_dropdown_item=0x7f03001f;
     }
     public static final class string {
         /**  Content description for the action bar "home" affordance. [CHAR LIMIT=NONE] 
@@ -1824,9 +1826,11 @@ containing a value of this type.
          */
         public static final int abc_toolbar_collapse_description=0x7f0a0004;
         public static final int app_name=0x7f0a0010;
+        public static final int btn_OK=0x7f0a001a;
         public static final int hello_world=0x7f0a0011;
         public static final int title_activity_atenuantes=0x7f0a0018;
         public static final int title_activity_cadastro_cliente=0x7f0a0014;
+        public static final int title_activity_descricao_cliente=0x7f0a0019;
         public static final int title_activity_regras=0x7f0a0016;
         public static final int title_activity_seleciona_cliente=0x7f0a0015;
         public static final int title_activity_tipo_cliente=0x7f0a0013;

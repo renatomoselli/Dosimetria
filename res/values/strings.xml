@@ -10,5 +10,7 @@
     <string name="title_activity_regras">RegrasActivity</string>
     <string name="title_activity_visualiza_ficha">VisualizaFichaActivity</string>
     <string name="title_activity_atenuantes">AtenuantesActivity</string>
+    <string name="title_activity_descricao_cliente">DescricaoCliente</string>
+    <string name="btn_OK">OK</string>
 
 </resources>

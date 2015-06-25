@@ -42,7 +42,7 @@ public class Pessoa implements Serializable{
 	
 	@Override
 	public String toString() {
-		return "Cliente [nome=" + nome + "]";
+		return "Nome : " + nome;
 	}
 	
 	
