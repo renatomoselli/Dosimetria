@@ -97,6 +97,7 @@ public class RegrasActivity extends Activity {
 								.getString("nome"), obj.getInt("mes"));
 						if (auxCrime.equals(m.getNome())) {
 							auxPena = m.getMes();
+							finalizarCalculo();
 							
 						}
 						// categoria.add(m);
@@ -107,14 +108,27 @@ public class RegrasActivity extends Activity {
 			}
 		});
 		
-		if(radio1.isChecked()){
+		
+		
+	}
+	
+	private void finalizarCalculo(){
+		if((radio2.isChecked()) && (radio3.isChecked())){
 			double atenuante = auxPena/3;
 			penaFinal = auxPena - atenuante;
+			double agravante = penaFinal/3;
+			penaFinal = penaFinal + agravante;
+		}else
+			if(radio2.isChecked()){
+				penaFinal = auxPena;
 		}
 		
 		if(radio3.isChecked()){
-			double agravante = penaFinal/3;
-			penaFinal = penaFinal + agravante;
+			
+			
+		}else 
+			if(radio4.isChecked()){
+				penaFinal = auxPena;
 		}
 		
 		//pessoa = new Pessoa();
@@ -124,7 +138,7 @@ public class RegrasActivity extends Activity {
 		pessoa = pessoaDAO.getById(pessoaId);
 		//String alteraPena = "" + penaFinal;
 		int a = (int) penaFinal;
-		Toast.makeText(RegrasActivity.this, "Pena " + penaFinal + "pena arredondada" + a , Toast.LENGTH_LONG).show();
+//		Toast.makeText(RegrasActivity.this, "Pena " + penaFinal + "pena arredondada" + a , Toast.LENGTH_LONG).show();
 		//int altPena = Integer.parseInt(a);
 		pessoa.setPena(a);
 		
@@ -134,16 +148,15 @@ public class RegrasActivity extends Activity {
 		
 		Intent i = new Intent(RegrasActivity.this, MainActivity.class);
 		startActivity(i);
-		
 	}
 
 	private void selecionaCrime() {
 		if (radioFurto.isChecked()) {
 			auxCrime = "furto";
-			Toast.makeText(this, "Crime selecionado é o furto!", Toast.LENGTH_LONG).show();
+//			Toast.makeText(this, "Crime selecionado é o furto!", Toast.LENGTH_LONG).show();
 		} else {
 			auxCrime = "assalto";
-			Toast.makeText(this, "Crime selecionado é o assalto!", Toast.LENGTH_LONG).show();
+//			Toast.makeText(this, "Crime selecionado é o assalto!", Toast.LENGTH_LONG).show();
 		}
 	}
 }
