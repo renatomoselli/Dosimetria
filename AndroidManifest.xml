@@ -46,10 +46,7 @@
             android:name=".VisualizaFichaActivity"
             android:label="@string/title_activity_visualiza_ficha" >
         </activity>
-        <activity
-            android:name=".AtenuantesActivity"
-            android:label="@string/title_activity_atenuantes" >
-        </activity>
+
     </application>
 
 </manifest>
