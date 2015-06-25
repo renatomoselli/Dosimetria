@@ -100,8 +100,7 @@ public class SelecionaClienteActivity2 extends Activity {
 		
 		@Override
 		public void onClick(View v) {
-			Intent i = new Intent(SelecionaClienteActivity2.this, TipoCrimeActivity.class);
-			startActivity(i);
+			SelecionaClienteActivity2.this.finish();
 		}
 	};
 }

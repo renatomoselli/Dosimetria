@@ -1644,13 +1644,13 @@ containing a value of this type.
         public static final int always=0x7f090014;
         public static final int beginning=0x7f09001b;
         public static final int btnBuscar=0x7f09005d;
+        public static final int btnCalcular=0x7f09005b;
         public static final int btnClienteExiste=0x7f09005e;
         public static final int btnConsultaCliente=0x7f09004d;
         public static final int btnConsultaPena=0x7f09004c;
         public static final int btnNovoCliente=0x7f09005f;
         public static final int btnSalvar=0x7f09004a;
         public static final int btn_OK=0x7f09004b;
-        public static final int button1=0x7f09005b;
         public static final int checkbox=0x7f090029;
         public static final int collapseActionView=0x7f090015;
         public static final int decor_content_parent=0x7f09002f;

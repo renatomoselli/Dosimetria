@@ -51,14 +51,14 @@ public class DescricaoCliente extends Activity {
 	private void carregaTextView(){
 	
 		nome.setText("Nome = " + pessoa.getNome());
-		idade.setText("Descrição = " + pessoa.getIdade());
+		idade.setText("Idade = " + pessoa.getIdade());
 		//txtV3.setText("Descrição = " + pessoa.getSexo());
 		if(pessoa.getSexo() == 0){
 			genero.setText("Genero = Masculino");
 		}else{
 			genero.setText("Genero = Feminino");
 		}
-		pena.setText("Pena = Pena de aproximadamente de" + pessoa.getPena() + " meses");
+		pena.setText("Pena = de aproximadamente " + pessoa.getPena() + " meses");
 	}
 	
 	private void limpar(){
