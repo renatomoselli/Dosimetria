@@ -4,17 +4,14 @@ import org.apache.http.Header;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import java.util.ArrayList;
-
 import org.apache.http.Header;
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
-
 import com.loopj.android.http.AsyncHttpClient;
 import com.loopj.android.http.JsonHttpResponseHandler;
-
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -62,8 +59,10 @@ public class RegrasActivity extends Activity {
 		btCalcular = (Button) findViewById(R.id.btnCalcular);
 
 		btCalcular.setOnClickListener(calcular);
+		
 
 	}
+	
 	
 	private OnClickListener calcular = new OnClickListener() {
 		
@@ -113,22 +112,18 @@ public class RegrasActivity extends Activity {
 	}
 	
 	private void finalizarCalculo(){
-		if((radio2.isChecked()) && (radio3.isChecked())){
+		if((radio1.isChecked()) && (radio4.isChecked())){
 			double atenuante = auxPena/3;
 			penaFinal = auxPena - atenuante;
-			double agravante = penaFinal/3;
-			penaFinal = penaFinal + agravante;
-		}else
-			if(radio2.isChecked()){
-				penaFinal = auxPena;
 		}
 		
-		if(radio3.isChecked()){
-			
-			
-		}else 
-			if(radio4.isChecked()){
-				penaFinal = auxPena;
+		if((radio2.isChecked()) && (radio4.isChecked())){
+			penaFinal = auxPena;
+		}
+		
+		if((radio2.isChecked()) && (radio3.isChecked())){
+			double agravante = auxPena/3;
+			penaFinal = auxPena + agravante;
 		}
 		
 		//pessoa = new Pessoa();
